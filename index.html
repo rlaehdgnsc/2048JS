@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf8'>
+        <title>2048 GAME</title>
+        <style>
+            #table2048{
+                border-collapse: collapse;
+            }
+            #table2048 td{
+                border : 1px black solid;
+                width : 50px;
+                height : 50px;
+                font-size : 25px;
+                font-weight: bold;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <input type = 'text' id = 'size' value=4><button id = 'make'>Start</button>
+        <table id = "table2048">
+
+        </table>
+        <div id = "score">0</div>
+        <script src = "2048.js"></script>
+    </body>
+</html>
