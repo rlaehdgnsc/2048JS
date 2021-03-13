@@ -64,6 +64,12 @@ function randomCreate(){
 function draw(){
     table_data.forEach((row, i)=>{
         row.forEach((col, j)=>{
+            if(col === 2048){
+                alert('You win');
+                alert(`Score is ${score.textContent}`);
+                clear();
+                return;
+            }
             if(col){
                 table.children[i].children[j].textContent = col;
             }else{
